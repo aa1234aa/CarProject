@@ -1,0 +1,173 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_begin",
+      "children" : [ {
+        "name" : "TestBegin",
+        "children" : [ {
+          "name" : "test_begin",
+          "uid" : "d8915c042dfdf8e4",
+          "parentUid" : "cb26c078085c80687f0057e2489b985d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1623993332062,
+            "stop" : 1623993332062,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "cb26c078085c80687f0057e2489b985d"
+      } ],
+      "uid" : "b17a792851a83162761491596a6fb25e"
+    }, {
+      "name" : "test_end",
+      "children" : [ {
+        "name" : "TestEnd",
+        "children" : [ {
+          "name" : "test_end",
+          "uid" : "5efdb8a36eae77e8",
+          "parentUid" : "f8498a9158457235936ba44808529f43",
+          "status" : "passed",
+          "time" : {
+            "start" : 1623993332067,
+            "stop" : 1623993332067,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f8498a9158457235936ba44808529f43"
+      } ],
+      "uid" : "cc22059fcb36b511e6719787472a8101"
+    }, {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_login_01[admin-bitnei-首页]",
+          "uid" : "10daf9384b9d400d",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "broken",
+          "time" : {
+            "start" : 1623993332069,
+            "stop" : 1623993332069,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ "'首页'", "'bitnei'", "'admin'" ]
+        }, {
+          "name" : "test_select_carnum",
+          "uid" : "a0206432c1c215f7",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1623993372642,
+            "stop" : 1623993372642,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_select_noline",
+          "uid" : "76dff649f7415a4",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1623993372653,
+            "stop" : 1623993372653,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_select_notonline",
+          "uid" : "508c969580510b00",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1623993372660,
+            "stop" : 1623993372660,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_carnum",
+          "uid" : "8b38e9d03b21c1ae",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1623993372668,
+            "stop" : 1623993372668,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_noline",
+          "uid" : "6c96e668790c2500",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1623993372675,
+            "stop" : 1623993372676,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_notonline",
+          "uid" : "64ce2b9a51fb74b8",
+          "parentUid" : "a78be7069c22cb24448c5bc447c4aec6",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1623993372682,
+            "stop" : 1623993372682,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a78be7069c22cb24448c5bc447c4aec6"
+      } ],
+      "uid" : "0a485542467e5c5c95949e99a701fc6f"
+    }, {
+      "name" : "test_new_car",
+      "children" : [ {
+        "name" : "TestAuditArticle",
+        "children" : [ {
+          "name" : "test_sim_card",
+          "uid" : "dbcd172f0064c51b",
+          "parentUid" : "69ce26ae7b40d2f7a26e1071e83ae648",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1623993372693,
+            "stop" : 1623993372693,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_car_terminal_model",
+          "uid" : "7d2f4e4fa0bba7c2",
+          "parentUid" : "69ce26ae7b40d2f7a26e1071e83ae648",
+          "status" : "broken",
+          "time" : {
+            "start" : 1623993372706,
+            "stop" : 1623993372711,
+            "duration" : 5
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "69ce26ae7b40d2f7a26e1071e83ae648"
+      } ],
+      "uid" : "bc221c58789ced7a747e301ca79d861b"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ]
+}

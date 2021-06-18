@@ -1,0 +1,220 @@
+{
+  "378597b801a6e1a7fc3de36aae0a9bae" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dbcd172f0064c51b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372693,
+        "stop" : 1623993372693,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d1fa95031049547078964cdf15649623" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "76dff649f7415a4",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372653,
+        "stop" : 1623993372653,
+        "duration" : 0
+      }
+    } ]
+  },
+  "235a32c800fa173486ee33835bd8fe06" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d2f4e4fa0bba7c2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.101)",
+      "time" : {
+        "start" : 1623993372706,
+        "stop" : 1623993372711,
+        "duration" : 5
+      }
+    } ]
+  },
+  "f91b01a503dc51cf90698431c1075d26" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6c96e668790c2500",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372675,
+        "stop" : 1623993372676,
+        "duration" : 1
+      }
+    } ]
+  },
+  "fba7f47d766de544a0033f7154a09e41" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5efdb8a36eae77e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623993332067,
+        "stop" : 1623993332067,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4bd36c057971a6efec4bb8909500f2c1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "10daf9384b9d400d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.101)",
+      "time" : {
+        "start" : 1623993332069,
+        "stop" : 1623993332069,
+        "duration" : 0
+      }
+    } ]
+  },
+  "144035a356b9981552c98a906d53c9a9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a0206432c1c215f7",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372642,
+        "stop" : 1623993372642,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d28ad6f0aa724a28166cb4bd6f402b0d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "64ce2b9a51fb74b8",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372682,
+        "stop" : 1623993372682,
+        "duration" : 0
+      }
+    } ]
+  },
+  "31413328b90c21afbeba2f5b94a1ec40" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "508c969580510b00",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372660,
+        "stop" : 1623993372660,
+        "duration" : 0
+      }
+    } ]
+  },
+  "6f834c080686c900d4e1ff1fd2c830d4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d8915c042dfdf8e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623993332062,
+        "stop" : 1623993332062,
+        "duration" : 0
+      }
+    } ]
+  },
+  "887a21f892f2e3a573f55c012d28b765" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b38e9d03b21c1ae",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372668,
+        "stop" : 1623993372668,
+        "duration" : 0
+      }
+    } ]
+  }
+}

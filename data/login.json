@@ -1,0 +1,7 @@
+{
+  "SUCCESS": {
+    "username": "admin",
+    "password": "bitnei",
+    "expect": "首页"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_begin",
+    "uid" : "d8915c042dfdf8e4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1623993332062,
+      "stop" : 1623993332062,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_end",
+    "uid" : "5efdb8a36eae77e8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1623993332067,
+      "stop" : 1623993332067,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_login_01[admin-bitnei-首页]",
+    "uid" : "10daf9384b9d400d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1623993332069,
+      "stop" : 1623993332069,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ "'首页'", "'bitnei'", "'admin'" ]
+  }, {
+    "name" : "test_select_carnum",
+    "uid" : "a0206432c1c215f7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1623993372642,
+      "stop" : 1623993372642,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_select_noline",
+    "uid" : "76dff649f7415a4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1623993372653,
+      "stop" : 1623993372653,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_select_notonline",
+    "uid" : "508c969580510b00",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1623993372660,
+      "stop" : 1623993372660,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_carnum",
+    "uid" : "8b38e9d03b21c1ae",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1623993372668,
+      "stop" : 1623993372668,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_noline",
+    "uid" : "6c96e668790c2500",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1623993372675,
+      "stop" : 1623993372676,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_notonline",
+    "uid" : "64ce2b9a51fb74b8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1623993372682,
+      "stop" : 1623993372682,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_sim_card",
+    "uid" : "dbcd172f0064c51b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1623993372693,
+      "stop" : 1623993372693,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_car_terminal_model",
+    "uid" : "7d2f4e4fa0bba7c2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1623993372706,
+      "stop" : 1623993372711,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

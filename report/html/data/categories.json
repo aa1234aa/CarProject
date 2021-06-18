@@ -1,0 +1,37 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.101)",
+      "children" : [ {
+        "name" : "test_login_01[admin-bitnei-首页]",
+        "uid" : "10daf9384b9d400d",
+        "parentUid" : "2460a782209744957c48d6f244b9540b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1623993332069,
+          "stop" : 1623993332069,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ "'首页'", "'bitnei'", "'admin'" ]
+      }, {
+        "name" : "test_car_terminal_model",
+        "uid" : "7d2f4e4fa0bba7c2",
+        "parentUid" : "2460a782209744957c48d6f244b9540b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1623993372706,
+          "stop" : 1623993372711,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2460a782209744957c48d6f244b9540b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
