@@ -1,0 +1,106 @@
+{
+  "uid" : "801c437975d8a266",
+  "name" : "test_car_terminal_model",
+  "fullName" : "testcase.test_new_car.TestAuditArticle#test_car_terminal_model",
+  "historyId" : "235a32c800fa173486ee33835bd8fe06",
+  "time" : {
+    "start" : 1624013325186,
+    "stop" : 1624013328618,
+    "duration" : 3432
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given",
+  "statusTrace" : "self = <testcase.test_new_car.TestAuditArticle object at 0x0000025176FEF130>\n\n    def test_car_terminal_model(self):\n    \tlogging.info(\"用户名1111\")\n    \tcar_model = \"bitnei\" + ''.join(random.sample(string.digits + string.ascii_letters, 5))\n    \tcategory = \"车机\"\n    \tunit_name = \"潍柴动力股份有限公司\"\n    \timage=\"d://aa.img\"\n    \tself.basic_data_proxy.get_find_car_terminal_model()\n>   \tself.car_terminal_model_proxy.add_car_terminal_model(self,car_model,category,unit_name,image)\nE    TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given\n\ntestcase\\test_new_car.py:47: TypeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestAuditArticle",
+    "time" : {
+      "start" : 1624013325182,
+      "stop" : 1624013325182,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given",
+    "statusTrace" : "self = <testcase.test_new_car.TestAuditArticle object at 0x0000025176FEF130>\n\n    def test_car_terminal_model(self):\n    \tlogging.info(\"用户名1111\")\n    \tcar_model = \"bitnei\" + ''.join(random.sample(string.digits + string.ascii_letters, 5))\n    \tcategory = \"车机\"\n    \tunit_name = \"潍柴动力股份有限公司\"\n    \timage=\"d://aa.img\"\n    \tself.basic_data_proxy.get_find_car_terminal_model()\n>   \tself.car_terminal_model_proxy.add_car_terminal_model(self,car_model,category,unit_name,image)\nE    TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given\n\ntestcase\\test_new_car.py:47: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3da6c3b3248fe349",
+      "name" : "log",
+      "source" : "3da6c3b3248fe349.txt",
+      "type" : "text/plain",
+      "size" : 4291
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestAuditArticle::0",
+    "time" : {
+      "start" : 1624013328627,
+      "stop" : 1624013328627,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_new_car"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuditArticle"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB30823"
+  }, {
+    "name" : "thread",
+    "value" : "16516-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_new_car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=3)" ]
+  },
+  "source" : "801c437975d8a266.json",
+  "parameterValues" : [ ]
+}

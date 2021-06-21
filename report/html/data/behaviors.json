@@ -3,135 +3,135 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "test_begin",
-    "uid" : "d8915c042dfdf8e4",
+    "uid" : "9e237839ba8b6918",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1623993332062,
-      "stop" : 1623993332062,
+      "start" : 1624237901523,
+      "stop" : 1624237901523,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_end",
-    "uid" : "5efdb8a36eae77e8",
+    "uid" : "576292cedcd57857",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1623993332067,
-      "stop" : 1623993332067,
+      "start" : 1624237901526,
+      "stop" : 1624237901526,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_login_01[admin-bitnei-首页]",
-    "uid" : "10daf9384b9d400d",
+    "uid" : "62ca567696151733",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
+    "status" : "passed",
     "time" : {
-      "start" : 1623993332069,
-      "stop" : 1623993332069,
-      "duration" : 0
+      "start" : 1624237911726,
+      "stop" : 1624237976989,
+      "duration" : 65263
     },
-    "flaky" : false,
+    "flaky" : true,
     "parameters" : [ "'首页'", "'bitnei'", "'admin'" ]
   }, {
     "name" : "test_select_carnum",
-    "uid" : "a0206432c1c215f7",
+    "uid" : "e2f36b24a8ce6d4b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1623993372642,
-      "stop" : 1623993372642,
+      "start" : 1624237977010,
+      "stop" : 1624237977010,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_select_noline",
-    "uid" : "76dff649f7415a4",
+    "uid" : "ff1951eed1abd8e8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1623993372653,
-      "stop" : 1623993372653,
+      "start" : 1624237977028,
+      "stop" : 1624237977028,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_select_notonline",
-    "uid" : "508c969580510b00",
+    "uid" : "ec1f39386e9d5ae0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1623993372660,
-      "stop" : 1623993372660,
+      "start" : 1624237977036,
+      "stop" : 1624237977036,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_carnum",
-    "uid" : "8b38e9d03b21c1ae",
+    "uid" : "f75666cafc5c9dc5",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1623993372668,
-      "stop" : 1623993372668,
+      "start" : 1624237977043,
+      "stop" : 1624237977043,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_noline",
-    "uid" : "6c96e668790c2500",
+    "uid" : "a45864743e967c71",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1623993372675,
-      "stop" : 1623993372676,
-      "duration" : 1
+      "start" : 1624237977051,
+      "stop" : 1624237977051,
+      "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_notonline",
-    "uid" : "64ce2b9a51fb74b8",
+    "uid" : "6786e677a25f41f7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1623993372682,
-      "stop" : 1623993372682,
+      "start" : 1624237977062,
+      "stop" : 1624237977062,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_sim_card",
-    "uid" : "dbcd172f0064c51b",
+    "uid" : "1cec59af04435622",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
-      "start" : 1623993372693,
-      "stop" : 1623993372693,
+      "start" : 1624237977083,
+      "stop" : 1624237977083,
       "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "test_car_terminal_model",
-    "uid" : "7d2f4e4fa0bba7c2",
+    "uid" : "a03b705392ec769d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1623993372706,
-      "stop" : 1623993372711,
-      "duration" : 5
+      "start" : 1624237977104,
+      "stop" : 1624237983430,
+      "duration" : 6326
     },
-    "flaky" : false,
+    "flaky" : true,
     "parameters" : [ ]
   } ]
 }

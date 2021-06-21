@@ -1,109 +1,109 @@
 [ {
-  "uid" : "dbcd172f0064c51b",
-  "name" : "test_sim_card",
-  "time" : {
-    "start" : 1623993372693,
-    "stop" : 1623993372693,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "8b38e9d03b21c1ae",
-  "name" : "test_carnum",
-  "time" : {
-    "start" : 1623993372668,
-    "stop" : 1623993372668,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "a0206432c1c215f7",
-  "name" : "test_select_carnum",
-  "time" : {
-    "start" : 1623993372642,
-    "stop" : 1623993372642,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "10daf9384b9d400d",
-  "name" : "test_login_01[admin-bitnei-首页]",
-  "time" : {
-    "start" : 1623993332069,
-    "stop" : 1623993332069,
-    "duration" : 0
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "76dff649f7415a4",
-  "name" : "test_select_noline",
-  "time" : {
-    "start" : 1623993372653,
-    "stop" : 1623993372653,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "508c969580510b00",
-  "name" : "test_select_notonline",
-  "time" : {
-    "start" : 1623993372660,
-    "stop" : 1623993372660,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "d8915c042dfdf8e4",
-  "name" : "test_begin",
-  "time" : {
-    "start" : 1623993332062,
-    "stop" : 1623993332062,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5efdb8a36eae77e8",
+  "uid" : "576292cedcd57857",
   "name" : "test_end",
   "time" : {
-    "start" : 1623993332067,
-    "stop" : 1623993332067,
+    "start" : 1624237901526,
+    "stop" : 1624237901526,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6c96e668790c2500",
-  "name" : "test_noline",
+  "uid" : "1cec59af04435622",
+  "name" : "test_sim_card",
   "time" : {
-    "start" : 1623993372675,
-    "stop" : 1623993372676,
-    "duration" : 1
+    "start" : 1624237977083,
+    "stop" : 1624237977083,
+    "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "7d2f4e4fa0bba7c2",
+  "uid" : "ec1f39386e9d5ae0",
+  "name" : "test_select_notonline",
+  "time" : {
+    "start" : 1624237977036,
+    "stop" : 1624237977036,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "9e237839ba8b6918",
+  "name" : "test_begin",
+  "time" : {
+    "start" : 1624237901523,
+    "stop" : 1624237901523,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a45864743e967c71",
+  "name" : "test_noline",
+  "time" : {
+    "start" : 1624237977051,
+    "stop" : 1624237977051,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a03b705392ec769d",
   "name" : "test_car_terminal_model",
   "time" : {
-    "start" : 1623993372706,
-    "stop" : 1623993372711,
-    "duration" : 5
+    "start" : 1624237977104,
+    "stop" : 1624237983430,
+    "duration" : 6326
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "64ce2b9a51fb74b8",
+  "uid" : "ff1951eed1abd8e8",
+  "name" : "test_select_noline",
+  "time" : {
+    "start" : 1624237977028,
+    "stop" : 1624237977028,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e2f36b24a8ce6d4b",
+  "name" : "test_select_carnum",
+  "time" : {
+    "start" : 1624237977010,
+    "stop" : 1624237977010,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "6786e677a25f41f7",
   "name" : "test_notonline",
   "time" : {
-    "start" : 1623993372682,
-    "stop" : 1623993372682,
+    "start" : 1624237977062,
+    "stop" : 1624237977062,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "62ca567696151733",
+  "name" : "test_login_01[admin-bitnei-首页]",
+  "time" : {
+    "start" : 1624237911726,
+    "stop" : 1624237976989,
+    "duration" : 65263
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f75666cafc5c9dc5",
+  "name" : "test_carnum",
+  "time" : {
+    "start" : 1624237977043,
+    "stop" : 1624237977043,
     "duration" : 0
   },
   "status" : "skipped",

@@ -1,6 +1,7 @@
 from base.base_handle import BaseHandle
 from page.simcard_page import SimCardPage
 from utils.UtilsDriver import UtilsDriver,choice_operator
+import allure
 
 
 # sim卡操作层
@@ -10,6 +11,7 @@ class SimCardHandle(BaseHandle):
 		self.driver = UtilsDriver.get_driver()
 		
 	# 选择运营商
+	@allure.step(title="选择运营商")
 	def select_operators(self,operator):
 		choice_operator(self.driver,self.simcardpage.find_operators(),operator)
 	

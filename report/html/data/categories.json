@@ -4,33 +4,21 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.101)",
+      "name" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
       "children" : [ {
-        "name" : "test_login_01[admin-bitnei-首页]",
-        "uid" : "10daf9384b9d400d",
-        "parentUid" : "2460a782209744957c48d6f244b9540b",
-        "status" : "broken",
-        "time" : {
-          "start" : 1623993332069,
-          "stop" : 1623993332069,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ "'首页'", "'bitnei'", "'admin'" ]
-      }, {
         "name" : "test_car_terminal_model",
-        "uid" : "7d2f4e4fa0bba7c2",
-        "parentUid" : "2460a782209744957c48d6f244b9540b",
+        "uid" : "a03b705392ec769d",
+        "parentUid" : "5c4dc2c769791fdc1c2dad8372600e37",
         "status" : "broken",
         "time" : {
-          "start" : 1623993372706,
-          "stop" : 1623993372711,
-          "duration" : 5
+          "start" : 1624237977104,
+          "stop" : 1624237983430,
+          "duration" : 6326
         },
-        "flaky" : false,
+        "flaky" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "2460a782209744957c48d6f244b9540b"
+      "uid" : "5c4dc2c769791fdc1c2dad8372600e37"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

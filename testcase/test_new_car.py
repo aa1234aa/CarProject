@@ -7,7 +7,7 @@ from proxy.basic_data_proxy import BasicDataProxy
 from proxy.simcard_proxy import SimCardProxy
 from proxy.car_terminal_model_proxy import CarTerminalModelProxy
 import logging
-
+import allure
 
 @pytest.mark.run(order=3)
 class TestAuditArticle:
@@ -16,7 +16,6 @@ class TestAuditArticle:
 		self.basic_data_proxy = BasicDataProxy()
 		self.sim_card_proxy = SimCardProxy()
 		self.car_terminal_model_proxy = CarTerminalModelProxy()
-		
 	def teardown_class(self):
 		pass
 	
@@ -37,6 +36,7 @@ class TestAuditArticle:
 		assert is_exist(UtilsDriver.get_driver(), "新增成功")
 		
 		# 车辆型号新增
+	@allure.severity(allure.severity_level.BLOCKER)
 	def test_car_terminal_model(self):
 		logging.info("用户名1111")
 		car_model = "bitnei" + ''.join(random.sample(string.digits + string.ascii_letters, 5))
@@ -45,3 +45,4 @@ class TestAuditArticle:
 		image="d://time.img"
 		self.basic_data_proxy.get_find_car_terminal_model()
 		self.car_terminal_model_proxy.add_car_terminal_model(car_model,category,unit_name,image)
+		allure.attach(UtilsDriver.get_driver().get_screenshot_as_png(), "车辆型号新增", allure.attachment_type.PNG)
