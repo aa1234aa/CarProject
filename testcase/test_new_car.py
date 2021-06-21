@@ -9,6 +9,7 @@ from proxy.car_terminal_model_proxy import CarTerminalModelProxy
 import logging
 import allure
 
+
 @pytest.mark.run(order=3)
 class TestAuditArticle:
 	# 定义类级别的fixture初始化操作
