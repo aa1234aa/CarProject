@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_new_car.py:41 用户名1111
-[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:1055/session/63f83b4ea4250ceff499230946455aec/element {"using": "xpath", "value": "//i[@class='icon iconfont icon-jichushuju']"}
-[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:452 http://127.0.0.1:1055 "POST /session/63f83b4ea4250ceff499230946455aec/element HTTP/1.1" 404 942
-[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request

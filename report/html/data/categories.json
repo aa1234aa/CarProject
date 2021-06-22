@@ -7,13 +7,13 @@
       "name" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
       "children" : [ {
         "name" : "test_car_terminal_model",
-        "uid" : "a03b705392ec769d",
+        "uid" : "dfcc38cae1bd7f37",
         "parentUid" : "5c4dc2c769791fdc1c2dad8372600e37",
         "status" : "broken",
         "time" : {
-          "start" : 1624237977104,
-          "stop" : 1624237983430,
-          "duration" : 6326
+          "start" : 1624268192065,
+          "stop" : 1624268197775,
+          "duration" : 5710
         },
         "flaky" : true,
         "parameters" : [ ]

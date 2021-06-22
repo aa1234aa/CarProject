@@ -9,12 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1cec59af04435622",
+      "uid" : "7f540111c70ccd7",
       "status" : "skipped",
       "statusDetails" : "Skipped: 一直获取不到上过线",
       "time" : {
-        "start" : 1624237977083,
-        "stop" : 1624237977083,
+        "start" : 1624268192057,
+        "stop" : 1624268192057,
         "duration" : 0
       }
     } ]
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ff1951eed1abd8e8",
+      "uid" : "d289d9bbb2ec315e",
       "status" : "skipped",
       "statusDetails" : "Skipped: 一直获取不到上过线",
       "time" : {
-        "start" : 1624237977028,
-        "stop" : 1624237977028,
+        "start" : 1624268192028,
+        "stop" : 1624268192028,
         "duration" : 0
       }
     } ]
@@ -49,32 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a03b705392ec769d",
+      "uid" : "dfcc38cae1bd7f37",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
       "time" : {
-        "start" : 1624237977104,
-        "stop" : 1624237983430,
-        "duration" : 6326
-      }
-    } ]
-  },
-  "fba7f47d766de544a0033f7154a09e41" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "576292cedcd57857",
-      "status" : "passed",
-      "time" : {
-        "start" : 1624237901526,
-        "stop" : 1624237901526,
-        "duration" : 0
+        "start" : 1624268192065,
+        "stop" : 1624268197775,
+        "duration" : 5710
       }
     } ]
   },
@@ -88,12 +69,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a45864743e967c71",
+      "uid" : "1413ae1fc0134318",
       "status" : "skipped",
       "statusDetails" : "Skipped: 一直获取不到上过线",
       "time" : {
-        "start" : 1624237977051,
-        "stop" : 1624237977051,
+        "start" : 1624268192042,
+        "stop" : 1624268192042,
+        "duration" : 0
+      }
+    } ]
+  },
+  "fba7f47d766de544a0033f7154a09e41" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b1e07bc57d352c23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624268172628,
+        "stop" : 1624268172628,
         "duration" : 0
       }
     } ]
@@ -108,12 +108,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "62ca567696151733",
+      "uid" : "6c99e08c45990da7",
       "status" : "passed",
       "time" : {
-        "start" : 1624237911726,
-        "stop" : 1624237976989,
-        "duration" : 65263
+        "start" : 1624268181380,
+        "stop" : 1624268192011,
+        "duration" : 10631
       }
     } ]
   },
@@ -127,12 +127,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e2f36b24a8ce6d4b",
+      "uid" : "8227e25d2fa7da28",
       "status" : "skipped",
       "statusDetails" : "Skipped: 一直获取不到上过线",
       "time" : {
-        "start" : 1624237977010,
-        "stop" : 1624237977010,
+        "start" : 1624268192022,
+        "stop" : 1624268192022,
         "duration" : 0
       }
     } ]
@@ -147,12 +147,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ec1f39386e9d5ae0",
+      "uid" : "e263a5227d71291a",
       "status" : "skipped",
       "statusDetails" : "Skipped: 一直获取不到上过线",
       "time" : {
-        "start" : 1624237977036,
-        "stop" : 1624237977036,
+        "start" : 1624268192033,
+        "stop" : 1624268192033,
         "duration" : 0
       }
     } ]
@@ -167,12 +167,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6786e677a25f41f7",
+      "uid" : "251ecc4685d492de",
       "status" : "skipped",
       "statusDetails" : "Skipped: 一直获取不到上过线",
       "time" : {
-        "start" : 1624237977062,
-        "stop" : 1624237977062,
+        "start" : 1624268192050,
+        "stop" : 1624268192050,
         "duration" : 0
       }
     } ]
@@ -187,11 +187,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9e237839ba8b6918",
+      "uid" : "e063cef2847e3746",
       "status" : "passed",
       "time" : {
-        "start" : 1624237901523,
-        "stop" : 1624237901523,
+        "start" : 1624268172622,
+        "stop" : 1624268172622,
         "duration" : 0
       }
     } ]
@@ -206,12 +206,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f75666cafc5c9dc5",
+      "uid" : "28d092f6150714a8",
       "status" : "skipped",
       "statusDetails" : "Skipped: 一直获取不到上过线",
       "time" : {
-        "start" : 1624237977043,
-        "stop" : 1624237977043,
+        "start" : 1624268192038,
+        "stop" : 1624268192038,
         "duration" : 0
       }
     } ]

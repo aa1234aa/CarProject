@@ -4,141 +4,141 @@
   "children" : [ {
     "name" : "DESKTOP-GB30823",
     "children" : [ {
-      "name" : "81804-MainThread",
+      "name" : "96920-MainThread",
       "children" : [ {
-        "name" : "test_select_noline",
-        "uid" : "ff1951eed1abd8e8",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1624237977028,
-          "stop" : 1624237977028,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_login_01[admin-bitnei-首页]",
-        "uid" : "62ca567696151733",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
-        "status" : "passed",
-        "time" : {
-          "start" : 1624237911726,
-          "stop" : 1624237976989,
-          "duration" : 65263
-        },
-        "flaky" : true,
-        "parameters" : [ "'首页'", "'bitnei'", "'admin'" ]
-      }, {
-        "name" : "test_sim_card",
-        "uid" : "1cec59af04435622",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1624237977083,
-          "stop" : 1624237977083,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "test_select_carnum",
-        "uid" : "e2f36b24a8ce6d4b",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
+        "uid" : "8227e25d2fa7da28",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
         "status" : "skipped",
         "time" : {
-          "start" : 1624237977010,
-          "stop" : 1624237977010,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_noline",
-        "uid" : "a45864743e967c71",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1624237977051,
-          "stop" : 1624237977051,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_begin",
-        "uid" : "9e237839ba8b6918",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
-        "status" : "passed",
-        "time" : {
-          "start" : 1624237901523,
-          "stop" : 1624237901523,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_notonline",
-        "uid" : "6786e677a25f41f7",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1624237977062,
-          "stop" : 1624237977062,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_select_notonline",
-        "uid" : "ec1f39386e9d5ae0",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1624237977036,
-          "stop" : 1624237977036,
+          "start" : 1624268192022,
+          "stop" : 1624268192022,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_end",
-        "uid" : "576292cedcd57857",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
+        "uid" : "b1e07bc57d352c23",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
         "status" : "passed",
         "time" : {
-          "start" : 1624237901526,
-          "stop" : 1624237901526,
+          "start" : 1624268172628,
+          "stop" : 1624268172628,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_carnum",
-        "uid" : "f75666cafc5c9dc5",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
+        "name" : "test_noline",
+        "uid" : "1413ae1fc0134318",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
         "status" : "skipped",
         "time" : {
-          "start" : 1624237977043,
-          "stop" : 1624237977043,
+          "start" : 1624268192042,
+          "stop" : 1624268192042,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_notonline",
+        "uid" : "251ecc4685d492de",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1624268192050,
+          "stop" : 1624268192050,
           "duration" : 0
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_car_terminal_model",
-        "uid" : "a03b705392ec769d",
-        "parentUid" : "a6196d79d7de5b9f759e22ff3de5d7a0",
+        "uid" : "dfcc38cae1bd7f37",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
         "status" : "broken",
         "time" : {
-          "start" : 1624237977104,
-          "stop" : 1624237983430,
-          "duration" : 6326
+          "start" : 1624268192065,
+          "stop" : 1624268197775,
+          "duration" : 5710
         },
         "flaky" : true,
         "parameters" : [ ]
+      }, {
+        "name" : "test_select_noline",
+        "uid" : "d289d9bbb2ec315e",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1624268192028,
+          "stop" : 1624268192028,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login_01[admin-bitnei-首页]",
+        "uid" : "6c99e08c45990da7",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624268181380,
+          "stop" : 1624268192011,
+          "duration" : 10631
+        },
+        "flaky" : true,
+        "parameters" : [ "'首页'", "'bitnei'", "'admin'" ]
+      }, {
+        "name" : "test_select_notonline",
+        "uid" : "e263a5227d71291a",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1624268192033,
+          "stop" : 1624268192033,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_sim_card",
+        "uid" : "7f540111c70ccd7",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1624268192057,
+          "stop" : 1624268192057,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_begin",
+        "uid" : "e063cef2847e3746",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624268172622,
+          "stop" : 1624268172622,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_carnum",
+        "uid" : "28d092f6150714a8",
+        "parentUid" : "6d48def16cd567f200735594ed6ddfd4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1624268192038,
+          "stop" : 1624268192038,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
       } ],
-      "uid" : "a6196d79d7de5b9f759e22ff3de5d7a0"
+      "uid" : "6d48def16cd567f200735594ed6ddfd4"
     } ],
     "uid" : "84ebf7b08d273a195dc5812c07961b8c"
   } ]
