@@ -24,8 +24,8 @@ class CarTerminalModelPage(BasePage):
 		self.select_unit = By.XPATH,"//div[@class='cell']//span[@class='el-radio__inner']"
 		# 确定
 		self.determine = By.XPATH,"//button[@class='el-button el-button--primary el-button--mini']//span"
-		# 终端检测报告扫描件
-		self.scan_of_sport = By.XPATH,"//div[@class='el-form-item is-required el-form-item--mini']//div[@class='el-form-item__content']//div//div//div[@class='el-upload el-upload--picture-card']"
+		# 上传终端检测报告扫描件
+		self.scan_of_sport_file=By.XPATH,"//div[@class='el-form-item is-required el-form-item--mini']//div[@class='el-form-item__content']//div//div//input[@name='file']"
 
 	# 查找新增
 	def find_add_car_model(self):
@@ -63,6 +63,6 @@ class CarTerminalModelPage(BasePage):
 	def find_determine(self):
 		return self.get_element(self.determine)
 	
-	# 终端检测报告扫描件
-	def find_scan_of_sport(self):
-		return self.get_element(self.scan_of_sport)
+	# 上传终端检测报告扫描件
+	def find_scan_of_sport_file(self):
+		return self.get_element(self.scan_of_sport_file)

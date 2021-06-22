@@ -39,12 +39,11 @@ class TestAuditArticle:
 		# 车辆型号新增
 	@allure.severity(allure.severity_level.BLOCKER)
 	def test_car_terminal_model(self):
-		"""logging.info("用户名1111")
+		logging.info("用户名1111")
 		car_model = "bitnei" + ''.join(random.sample(string.digits + string.ascii_letters, 5))
-		category = "车机"
+		category = "TBOX"
 		unit_name = "潍柴动力股份有限公司"
-		image="d://time.img"
+		image= 'd:\\timg.jpg'
 		self.basic_data_proxy.get_find_car_terminal_model()
 		self.car_terminal_model_proxy.add_car_terminal_model(car_model,category,unit_name,image)
-		allure.attach(UtilsDriver.get_driver().get_screenshot_as_png(), "车辆型号新增", allure.attachment_type.PNG)"""
-		pass
+		allure.attach(UtilsDriver.get_driver().get_screenshot_as_png(), "车辆型号新增", allure.attachment_type.PNG)

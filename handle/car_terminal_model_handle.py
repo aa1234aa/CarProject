@@ -54,7 +54,7 @@ class CarTerminalModelHandle(BaseHandle):
 	def click_determine(self):
 		self.car_terminal_model_page.find_determine().click()
 		
-	# 终端检测报告扫描件
+	# 上传终端检测报告扫描件
 	@allure.step(title="终端检测报告扫描件")
-	def upload_scan_of_sport(self,image):
-		self.input_text(self.car_terminal_model_page.find_scan_of_sport(),image)
+	def upload_scan_of_sport_file(self,image):
+		self.send_image(self.car_terminal_model_page.find_scan_of_sport_file(),image)

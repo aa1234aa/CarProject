@@ -18,4 +18,4 @@ class CarTerminalModelProxy:
 		self.car_terminal_model_handle.click_select_unit()
 		self.car_terminal_model_handle.click_determine()
 		action_down()
-		self.car_terminal_model_handle.upload_scan_of_sport(image)
+		self.car_terminal_model_handle.upload_scan_of_sport_file(image)

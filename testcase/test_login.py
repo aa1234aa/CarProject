@@ -32,11 +32,11 @@ class TestLogin:
     # 定义测试方法  账号不存在
     @pytest.mark.parametrize("username, password,expect", login_case_data)
     def test_login_01(self, username, password,expect):
-        pass
-        """code = input("请输入验证码")
+        code = input("请输入验证码")
         self.login_proxy.login(username,password,code)
         msg = get_msg()
-        assert expect in msg"""
+        time.sleep(2)
+        assert expect in msg
 
     @pytest.mark.skip(reason="一直获取不到上过线")
     # 断言车辆实时状态里面的终端在线状态是否为上过线
