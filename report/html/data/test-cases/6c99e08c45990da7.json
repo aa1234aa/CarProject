@@ -1,0 +1,261 @@
+{
+  "uid" : "6c99e08c45990da7",
+  "name" : "test_login_01[admin-bitnei-首页]",
+  "fullName" : "testcase.test_login.TestLogin#test_login_01",
+  "historyId" : "4bd36c057971a6efec4bb8909500f2c1",
+  "time" : {
+    "start" : 1624268181380,
+    "stop" : 1624268192011,
+    "duration" : 10631
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin",
+    "time" : {
+      "start" : 1624268172632,
+      "stop" : 1624268180109,
+      "duration" : 7477
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "16ecc309161e9dc6",
+      "name" : "log",
+      "source" : "16ecc309161e9dc6.txt",
+      "type" : "text/plain",
+      "size" : 9804
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin::0",
+    "time" : {
+      "start" : 1624268192053,
+      "stop" : 1624268192053,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB30823"
+  }, {
+    "name" : "thread",
+    "value" : "96920-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expect",
+    "value" : "'首页'"
+  }, {
+    "name" : "password",
+    "value" : "'bitnei'"
+  }, {
+    "name" : "username",
+    "value" : "'admin'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6e8999d1c040c242",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624245237382,
+        "stop" : 1624245248573,
+        "duration" : 11191
+      }
+    }, {
+      "uid" : "d9064491597e838d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '首页' in ''",
+      "time" : {
+        "start" : 1624244844482,
+        "stop" : 1624244855935,
+        "duration" : 11453
+      }
+    }, {
+      "uid" : "30d93a7aadc0aa7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624237911726,
+        "stop" : 1624237976989,
+        "duration" : 65263
+      }
+    }, {
+      "uid" : "e3a9b3a520f4cc3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624014692006,
+        "stop" : 1624014701040,
+        "duration" : 9034
+      }
+    }, {
+      "uid" : "ac9fa40c8a990f33",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624014521999,
+        "stop" : 1624014530332,
+        "duration" : 8333
+      }
+    }, {
+      "uid" : "dc179a2353059f5a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '首页' in ''",
+      "time" : {
+        "start" : 1624014489358,
+        "stop" : 1624014500443,
+        "duration" : 11085
+      }
+    }, {
+      "uid" : "44ca3fa76eaf4c13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624014364516,
+        "stop" : 1624014373196,
+        "duration" : 8680
+      }
+    }, {
+      "uid" : "4c275e369e1ab4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624014142158,
+        "stop" : 1624014161140,
+        "duration" : 18982
+      }
+    }, {
+      "uid" : "2fa6c2f3ea83bdd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624013951647,
+        "stop" : 1624013963904,
+        "duration" : 12257
+      }
+    }, {
+      "uid" : "554b743b03941ea9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624013889546,
+        "stop" : 1624013897715,
+        "duration" : 8169
+      }
+    }, {
+      "uid" : "7d900b27e90adf09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624013557772,
+        "stop" : 1624013566563,
+        "duration" : 8791
+      }
+    }, {
+      "uid" : "75391912c0f96ad",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '首页' in ''",
+      "time" : {
+        "start" : 1624013314993,
+        "stop" : 1624013324845,
+        "duration" : 9852
+      }
+    }, {
+      "uid" : "ea4e24356590ddb7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624012971856,
+        "stop" : 1624012981548,
+        "duration" : 9692
+      }
+    }, {
+      "uid" : "56e855f396b7d663",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624012894063,
+        "stop" : 1624012911280,
+        "duration" : 17217
+      }
+    }, {
+      "uid" : "383e6c6582fe3da9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624012488411,
+        "stop" : 1624012499701,
+        "duration" : 11290
+      }
+    }, {
+      "uid" : "165bfd7ff11eecc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624009303477,
+        "stop" : 1624009317780,
+        "duration" : 14303
+      }
+    }, {
+      "uid" : "e40abf86b84b5931",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624007875367,
+        "stop" : 1624007887133,
+        "duration" : 11766
+      }
+    }, {
+      "uid" : "b37f5227adc33dcc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.101)",
+      "time" : {
+        "start" : 1623993332069,
+        "stop" : 1623993332069,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "6c99e08c45990da7.json",
+  "parameterValues" : [ "'首页'", "'bitnei'", "'admin'" ]
+}

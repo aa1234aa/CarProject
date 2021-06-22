@@ -1,0 +1,91 @@
+{
+  "uid" : "5e6ae5012d76313a",
+  "name" : "test_select_noline",
+  "fullName" : "testcase.test_login.TestLogin#test_select_noline",
+  "historyId" : "d1fa95031049547078964cdf15649623",
+  "time" : {
+    "start" : 1624014530414,
+    "stop" : 1624014530414,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 一直获取不到上过线",
+  "statusTrace" : "('D:\\\\pythonProject1\\\\CarProject\\\\testcase\\\\test_login.py', 49, 'Skipped: 一直获取不到上过线')",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin",
+    "time" : {
+      "start" : 1624014514470,
+      "stop" : 1624014520822,
+      "duration" : 6352
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin::0",
+    "time" : {
+      "start" : 1624014530625,
+      "stop" : 1624014530625,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip(reason='一直获取不到上过线')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB30823"
+  }, {
+    "name" : "thread",
+    "value" : "46772-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=2)", "@pytest.mark.skip(reason='一直获取不到上过线')" ]
+  },
+  "source" : "5e6ae5012d76313a.json",
+  "parameterValues" : [ ]
+}

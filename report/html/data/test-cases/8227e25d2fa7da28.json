@@ -1,0 +1,255 @@
+{
+  "uid" : "8227e25d2fa7da28",
+  "name" : "test_select_carnum",
+  "fullName" : "testcase.test_login.TestLogin#test_select_carnum",
+  "historyId" : "144035a356b9981552c98a906d53c9a9",
+  "time" : {
+    "start" : 1624268192022,
+    "stop" : 1624268192022,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 一直获取不到上过线",
+  "statusTrace" : "('D:\\\\pythonProject1\\\\CarProject\\\\testcase\\\\test_login.py', 40, 'Skipped: 一直获取不到上过线')",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin",
+    "time" : {
+      "start" : 1624268172632,
+      "stop" : 1624268180109,
+      "duration" : 7477
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin::0",
+    "time" : {
+      "start" : 1624268192053,
+      "stop" : 1624268192053,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip(reason='一直获取不到上过线')"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB30823"
+  }, {
+    "name" : "thread",
+    "value" : "96920-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "30569b642952b521",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624245248584,
+        "stop" : 1624245248584,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "374cbc92a576fdd0",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624244856177,
+        "stop" : 1624244856177,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3317918b594c3427",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624237977010,
+        "stop" : 1624237977010,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "94f22a74aaec5682",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624014701055,
+        "stop" : 1624014701055,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6ed6514db833c162",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624014530409,
+        "stop" : 1624014530409,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9d1528a25006d945",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624014500812,
+        "stop" : 1624014500812,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c44ec86a233c562f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624014373243,
+        "stop" : 1624014373243,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b5d7529a93890d3a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624014161152,
+        "stop" : 1624014161152,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "14ea669d4758dfba",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624013963926,
+        "stop" : 1624013963926,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "83e28da62a929644",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624013897733,
+        "stop" : 1624013897733,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1f85fc25e1b6d98d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624013566611,
+        "stop" : 1624013566611,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "79b86fab6e5685cb",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624013325104,
+        "stop" : 1624013325104,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fccec55465e5b38e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624012981574,
+        "stop" : 1624012981574,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6e80e9befde3bbd6",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624012911287,
+        "stop" : 1624012911287,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cd9fe28d4e079d5b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624012499718,
+        "stop" : 1624012499718,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "36a1929af440a2cd",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624009317842,
+        "stop" : 1624009317842,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e8eca60dd91fec23",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1624007887165,
+        "stop" : 1624007887165,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1faaf93841441fc3",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 一直获取不到上过线",
+      "time" : {
+        "start" : 1623993372642,
+        "stop" : 1623993372642,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)", "@pytest.mark.skip(reason='一直获取不到上过线')" ]
+  },
+  "source" : "8227e25d2fa7da28.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "6d73444a7829f03f",
+  "name" : "test_end",
+  "fullName" : "testcase.test_end.TestEnd#test_end",
+  "historyId" : "fba7f47d766de544a0033f7154a09e41",
+  "time" : {
+    "start" : 1624014132478,
+    "stop" : 1624014132478,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=100)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_end"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestEnd"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB30823"
+  }, {
+    "name" : "thread",
+    "value" : "2028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_end"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=100)" ]
+  },
+  "source" : "6d73444a7829f03f.json",
+  "parameterValues" : [ ]
+}

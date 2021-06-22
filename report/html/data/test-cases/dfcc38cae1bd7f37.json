@@ -1,0 +1,440 @@
+{
+  "uid" : "dfcc38cae1bd7f37",
+  "name" : "test_car_terminal_model",
+  "fullName" : "testcase.test_new_car.TestAuditArticle#test_car_terminal_model",
+  "historyId" : "235a32c800fa173486ee33835bd8fe06",
+  "time" : {
+    "start" : 1624268192065,
+    "stop" : 1624268197775,
+    "duration" : 5710
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
+  "statusTrace" : "self = <testcase.test_new_car.TestAuditArticle object at 0x000002AA6311A7F0>\n\n    @allure.severity(allure.severity_level.BLOCKER)\n    def test_car_terminal_model(self):\n    \tlogging.info(\"用户名1111\")\n    \tcar_model = \"bitnei\" + ''.join(random.sample(string.digits + string.ascii_letters, 5))\n    \tcategory = \"车机\"\n    \tunit_name = \"潍柴动力股份有限公司\"\n    \timage=\"d://time.img\"\n    \tself.basic_data_proxy.get_find_car_terminal_model()\n>   \tself.car_terminal_model_proxy.add_car_terminal_model(car_model,category,unit_name,image)\n\ntestcase\\test_new_car.py:48: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nproxy\\car_terminal_model_proxy.py:21: in add_car_terminal_model\n    self.car_terminal_model_handle.upload_scan_of_sport(image)\nhandle\\car_terminal_model_handle.py:60: in upload_scan_of_sport\n    self.input_text(self.car_terminal_model_page.find_scan_of_sport(),image)\nbase\\base_handle.py:10: in input_text\n    element.clear()\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:95: in clear\n    self._execute(Command.CLEAR_ELEMENT)\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:633: in _execute\n    return self._parent.execute(command, params)\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002AA63087730>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"invalid element state\",\"message\":\"invalid element state\\\\n  (Session info...\\n\\\\tRtlGetAppContainerNamedObjectPath [0x778787A4+228]\\\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77878774+180]\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\nE         (Session info: chrome=91.0.4472.106)\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:242: InvalidElementStateException",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestAuditArticle",
+    "time" : {
+      "start" : 1624268192064,
+      "stop" : 1624268192064,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
+    "statusTrace" : "self = <testcase.test_new_car.TestAuditArticle object at 0x000002AA6311A7F0>\n\n    @allure.severity(allure.severity_level.BLOCKER)\n    def test_car_terminal_model(self):\n    \tlogging.info(\"用户名1111\")\n    \tcar_model = \"bitnei\" + ''.join(random.sample(string.digits + string.ascii_letters, 5))\n    \tcategory = \"车机\"\n    \tunit_name = \"潍柴动力股份有限公司\"\n    \timage=\"d://time.img\"\n    \tself.basic_data_proxy.get_find_car_terminal_model()\n>   \tself.car_terminal_model_proxy.add_car_terminal_model(car_model,category,unit_name,image)\n\ntestcase\\test_new_car.py:48: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nproxy\\car_terminal_model_proxy.py:21: in add_car_terminal_model\n    self.car_terminal_model_handle.upload_scan_of_sport(image)\nhandle\\car_terminal_model_handle.py:60: in upload_scan_of_sport\n    self.input_text(self.car_terminal_model_page.find_scan_of_sport(),image)\nbase\\base_handle.py:10: in input_text\n    element.clear()\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:95: in clear\n    self._execute(Command.CLEAR_ELEMENT)\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:633: in _execute\n    return self._parent.execute(command, params)\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000002AA63087730>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"invalid element state\",\"message\":\"invalid element state\\\\n  (Session info...\\n\\\\tRtlGetAppContainerNamedObjectPath [0x778787A4+228]\\\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77878774+180]\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\nE         (Session info: chrome=91.0.4472.106)\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:242: InvalidElementStateException",
+    "steps" : [ {
+      "name" : "点击新增",
+      "time" : {
+        "start" : 1624268193928,
+        "stop" : 1624268194689,
+        "duration" : 761
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "输入终端型号",
+      "time" : {
+        "start" : 1624268194689,
+        "stop" : 1624268195267,
+        "duration" : 578
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "car_model",
+        "value" : "'bitneias5mB'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "选择终端种类",
+      "time" : {
+        "start" : 1624268195267,
+        "stop" : 1624268196504,
+        "duration" : 1237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "category",
+        "value" : "'车机'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "查找支持加密芯片",
+      "time" : {
+        "start" : 1624268196504,
+        "stop" : 1624268196618,
+        "duration" : 114
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "查找终端生产企业",
+      "time" : {
+        "start" : 1624268196618,
+        "stop" : 1624268196779,
+        "duration" : 161
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "查找单位名称",
+      "time" : {
+        "start" : 1624268196779,
+        "stop" : 1624268197088,
+        "duration" : 309
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "unit_name",
+        "value" : "'潍柴动力股份有限公司'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "单位查询",
+      "time" : {
+        "start" : 1624268197088,
+        "stop" : 1624268197175,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "选择单位",
+      "time" : {
+        "start" : 1624268197176,
+        "stop" : 1624268197283,
+        "duration" : 107
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "确定",
+      "time" : {
+        "start" : 1624268197283,
+        "stop" : 1624268197385,
+        "duration" : 102
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "终端检测报告扫描件",
+      "time" : {
+        "start" : 1624268197722,
+        "stop" : 1624268197768,
+        "duration" : 46
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)\n\n",
+      "statusTrace" : "  File \"d:\\pythonproject1\\carproject\\venv\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\pythonProject1\\CarProject\\handle\\car_terminal_model_handle.py\", line 60, in upload_scan_of_sport\n    self.input_text(self.car_terminal_model_page.find_scan_of_sport(),image)\n  File \"D:\\pythonProject1\\CarProject\\base\\base_handle.py\", line 10, in input_text\n    element.clear()\n  File \"d:\\pythonproject1\\carproject\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 95, in clear\n    self._execute(Command.CLEAR_ELEMENT)\n  File \"d:\\pythonproject1\\carproject\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 633, in _execute\n    return self._parent.execute(command, params)\n  File \"d:\\pythonproject1\\carproject\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 321, in execute\n    self.error_handler.check_response(response)\n  File \"d:\\pythonproject1\\carproject\\venv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "image",
+        "value" : "'d://time.img'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "21b30bc69b17db3b",
+      "name" : "log",
+      "source" : "21b30bc69b17db3b.txt",
+      "type" : "text/plain",
+      "size" : 19069
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestAuditArticle::0",
+    "time" : {
+      "start" : 1624268198144,
+      "stop" : 1624268198144,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_new_car"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuditArticle"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB30823"
+  }, {
+    "name" : "thread",
+    "value" : "96920-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_new_car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "1ed7c19044bb7e1e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624245248625,
+        "stop" : 1624245262541,
+        "duration" : 13916
+      }
+    }, {
+      "uid" : "34ea853741650dd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624244856218,
+        "stop" : 1624244861464,
+        "duration" : 5246
+      }
+    }, {
+      "uid" : "b49515f64d9e94fd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624237977104,
+        "stop" : 1624237983430,
+        "duration" : 6326
+      }
+    }, {
+      "uid" : "e9aad2989a328b4d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624014701117,
+        "stop" : 1624014713822,
+        "duration" : 12705
+      }
+    }, {
+      "uid" : "ee0a2c4e27f364b0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//body/div[@id='app']/div[@class='main']/div[@class='submain']/div[@class='xy-main el-scrollbar']/div[@class='scroll-y el-scrollbar__wrap']/div[@class='el-scrollbar__view']/div[@class='monitor-center']/div[@class='xy-container']/div[@class='xy-grid-container']/div/div[@class='xy-table']/div[@class='margin-bottom20 text-align-right']/div[1]\"}\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624014530689,
+        "stop" : 1624014545780,
+        "duration" : 15091
+      }
+    }, {
+      "uid" : "c39610f672381a02",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624014500888,
+        "stop" : 1624014503579,
+        "duration" : 2691
+      }
+    }, {
+      "uid" : "bebbd5f95fb6e6a5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624014373492,
+        "stop" : 1624014379736,
+        "duration" : 6244
+      }
+    }, {
+      "uid" : "c00b7cea4a4a4daf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state\n  (Session info: chrome=91.0.4472.106)",
+      "time" : {
+        "start" : 1624014161246,
+        "stop" : 1624014166590,
+        "duration" : 5344
+      }
+    }, {
+      "uid" : "eb102fa21fe161a0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1624013964006,
+        "stop" : 1624013989490,
+        "duration" : 25484
+      }
+    }, {
+      "uid" : "21da627b5afd2248",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624013897808,
+        "stop" : 1624013900485,
+        "duration" : 2677
+      }
+    }, {
+      "uid" : "d3d4609a25f82d6d",
+      "status" : "broken",
+      "statusDetails" : "TypeError: add_car_terminal_model() takes 1 positional argument but 2 were given",
+      "time" : {
+        "start" : 1624013567268,
+        "stop" : 1624013571654,
+        "duration" : 4386
+      }
+    }, {
+      "uid" : "5f420be40588e2ca",
+      "status" : "broken",
+      "statusDetails" : "TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given",
+      "time" : {
+        "start" : 1624013325186,
+        "stop" : 1624013328618,
+        "duration" : 3432
+      }
+    }, {
+      "uid" : "e677253ad41d3828",
+      "status" : "broken",
+      "statusDetails" : "TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given",
+      "time" : {
+        "start" : 1624012981634,
+        "stop" : 1624012983461,
+        "duration" : 1827
+      }
+    }, {
+      "uid" : "a287db6c10e9954b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given",
+      "time" : {
+        "start" : 1624012911321,
+        "stop" : 1624012913148,
+        "duration" : 1827
+      }
+    }, {
+      "uid" : "3b602a198229372b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given",
+      "time" : {
+        "start" : 1624012499781,
+        "stop" : 1624012502149,
+        "duration" : 2368
+      }
+    }, {
+      "uid" : "457e1c06df100486",
+      "status" : "broken",
+      "statusDetails" : "TypeError: add_car_terminal_model() takes 5 positional arguments but 6 were given",
+      "time" : {
+        "start" : 1624009318081,
+        "stop" : 1624009320311,
+        "duration" : 2230
+      }
+    }, {
+      "uid" : "d2d66447d94c81ff",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1624007887372,
+        "stop" : 1624007914197,
+        "duration" : 26825
+      }
+    }, {
+      "uid" : "41fdfc3971761468",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=91.0.4472.101)",
+      "time" : {
+        "start" : 1623993372706,
+        "stop" : 1623993372711,
+        "duration" : 5
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=3)" ]
+  },
+  "source" : "dfcc38cae1bd7f37.json",
+  "parameterValues" : [ ]
+}

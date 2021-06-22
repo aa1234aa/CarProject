@@ -1,0 +1,115 @@
+{
+  "uid" : "dc179a2353059f5a",
+  "name" : "test_login_01[admin-bitnei-首页]",
+  "fullName" : "testcase.test_login.TestLogin#test_login_01",
+  "historyId" : "4bd36c057971a6efec4bb8909500f2c1",
+  "time" : {
+    "start" : 1624014489358,
+    "stop" : 1624014500443,
+    "duration" : 11085
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '首页' in ''",
+  "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001FFBE32DC40>, username = 'admin', password = 'bitnei'\nexpect = '首页'\n\n    @pytest.mark.parametrize(\"username, password,expect\", login_case_data)\n    def test_login_01(self, username, password,expect):\n        code = input(\"请输入验证码\")\n        self.login_proxy.login(username,password,code)\n        msg = get_msg()\n>       assert expect in msg\nE       AssertionError: assert '首页' in ''\n\ntestcase\\test_login.py:38: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin",
+    "time" : {
+      "start" : 1624014473141,
+      "stop" : 1624014488270,
+      "duration" : 15129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '首页' in ''",
+    "statusTrace" : "self = <testcase.test_login.TestLogin object at 0x000001FFBE32DC40>, username = 'admin', password = 'bitnei'\nexpect = '首页'\n\n    @pytest.mark.parametrize(\"username, password,expect\", login_case_data)\n    def test_login_01(self, username, password,expect):\n        code = input(\"请输入验证码\")\n        self.login_proxy.login(username,password,code)\n        msg = get_msg()\n>       assert expect in msg\nE       AssertionError: assert '首页' in ''\n\ntestcase\\test_login.py:38: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6f6a454311f44063",
+      "name" : "log",
+      "source" : "6f6a454311f44063.txt",
+      "type" : "text/plain",
+      "size" : 9841
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin::0",
+    "time" : {
+      "start" : 1624014500871,
+      "stop" : 1624014500871,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GB30823"
+  }, {
+    "name" : "thread",
+    "value" : "17084-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expect",
+    "value" : "'首页'"
+  }, {
+    "name" : "password",
+    "value" : "'bitnei'"
+  }, {
+    "name" : "username",
+    "value" : "'admin'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "dc179a2353059f5a.json",
+  "parameterValues" : [ "'首页'", "'bitnei'", "'admin'" ]
+}
